@@ -1,0 +1,34 @@
+<html>
+  <link rel="stylesheet" href="static/estilo.css">
+  <head> 
+    <title>Cadastros das compras</title>
+  <a href="/"><button>Voltar</button></a>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Cadastros das Compras</h1>
+    <form action="mostrar" method="get">
+    <body style="background-color:rgb(109, 107, 107);">
+    <ol>
+      {%for marca in produtos%}
+    <li>{{marca}} - {{produtos[marca].nome}} - {{produtos[marca].valor}}</li>
+    </form>
+    {% endfor %}     
+      </form>
+    </ol>
+    <center>
+      <form method="post" action="/remover" align="center">
+        <h2>Desejas remover algum item?</h2>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="marca">Marca:</label><br>
+        <input type="text" id="marca" name="marca"><br>
+        <label for="valor">Valor:</label><br>
+        <input type="text" id="valor" name="valor"><br><br>
+        <button type="submit">Remover</button>
+      </center> 
+      <form method="post" action="/somar">
+      <h5>O total é: {{total}}</h5>
+      </form>
+    </body>
+</html>
