@@ -1,6 +1,7 @@
 # Mini-Projeto-Flask-IFPB-
 
-![image](https://user-images.githubusercontent.com/101043200/207947344-31a8eca9-2548-4efd-b638-2784921b86dc.png)
+![image](https://user-images.githubusercontent.com/101043200/208020093-40221b72-6b0a-469b-97b4-3ba81fd0e16b.png)
+
 
 ![image](https://user-images.githubusercontent.com/101043200/207947380-9e720770-75a4-46de-b7d1-2b7123f80b05.png)
 
